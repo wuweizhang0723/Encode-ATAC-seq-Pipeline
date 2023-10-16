@@ -7,6 +7,6 @@
 
 ## Use Encode pipeline 
 * Tutorial: https://bioinfocore.com/blogs/encode-atac-seq-analyzing-pipeline-hands-on-tutorial/
-* Git clone pipeline GitHub repo
-* Install pipeline's Conda environment: https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/docs/install_conda.md#how-to-install-pipelines-conda-environment
+* Git clone pipeline GitHub repo: v1.8.0 https://github.com/ENCODE-DCC/atac-seq-pipeline/tree/v1.8.0
+* Install pipeline's Conda environment: https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/v1.8.0/docs/install_conda.md
 * 
