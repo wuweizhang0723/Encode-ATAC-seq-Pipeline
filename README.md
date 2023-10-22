@@ -4,6 +4,9 @@
 * Download: https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit
   ```
   export PATH=$PATH:$PWD/sratoolkit.3.0.7-mac64/bin
+
+  prefetch SRR7650729
+  fasterq-dump SRR7650729
   ```
 * Use `prefetch` and `fasterq-dump` to extract FASTQ-files: https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
 * Useful info: https://erilu.github.io/python-fastq-downloader/
