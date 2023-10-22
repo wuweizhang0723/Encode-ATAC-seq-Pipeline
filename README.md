@@ -18,16 +18,20 @@
 * Initialize Caper
   ```
   caper init local
-  vi ~/.caper/default.conf    # choose a directory to store pipeline output
+
+  # choose a directory to store pipeline output
+  vi ~/.caper/default.conf
   ```
 * Git clone pipeline GitHub repo: v2.2.2 https://github.com/ENCODE-DCC/atac-seq-pipeline
   ```
   git clone https://github.com/ENCODE-DCC/atac-seq-pipeline
   cd atac-seq-pipeline
   ```
-* Run pipeline command on TEST_INPUT_JSON
+* Run pipeline command on test INPUT_JSON
   ```
-  singularity exec docker://ubuntu:latest echo hello      # check if singularity works
+  # check if singularity works
+  singularity exec docker://ubuntu:latest echo hello
+  
   INPUT_JSON="https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ_subsampled.json"
   caper run atac.wdl -i "${INPUT_JSON}" --singularity --max-concurrent-tasks 1
   ```
