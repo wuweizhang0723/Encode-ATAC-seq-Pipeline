@@ -2,6 +2,7 @@
 
 ## Use sra-toolkit to get fastq file
 * Download: https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit
+* Quick Toolkit Configuration: https://github.com/ncbi/sra-tools/wiki/03.-Quick-Toolkit-Configuration
   ```
   export PATH=$PATH:$PWD/sratoolkit.3.0.7-mac64/bin
 
