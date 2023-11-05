@@ -7,7 +7,7 @@
   export PATH=$PATH:$PWD/sratoolkit.3.0.7-mac64/bin
 
   prefetch SRR7650729
-  fasterq-dump SRR7650729
+  fastq-dump --gzip --outdir ./fastq/ --split-files ./sra/SRR7650729.sra
   ```
 * Use `prefetch` and `fasterq-dump` to extract FASTQ-files: https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
 * Useful info: https://erilu.github.io/python-fastq-downloader/
@@ -40,9 +40,9 @@
   singularity exec docker://ubuntu:latest echo hello
   
   INPUT_JSON="https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ_subsampled.json"
-  caper run atac.wdl -i "${INPUT_JSON}" --singularity --max-concurrent-tasks 1
+  caper run atac.wdl -i "${INPUT_JSON}" --singularity
   ```
 * Check output
   ```
-  croo YOUR_OUTPUT_PATH/atac/SOME_JOB_ID/metadata.json    # a html file will be generated, download that to local
+  croo YOUR_OUTPUT_PATH/atac/SOME_JOB_ID/metadata.json --out-dir ./outputs    # a html file will be generated, download that to local
   ```
