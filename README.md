@@ -1,4 +1,4 @@
-# Preprocess-ATAC-seq
+# Encode-ATAC-seq-Pipeline
 
 ## Use sra-toolkit to get fastq file
 * Download: https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit
