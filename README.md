@@ -7,7 +7,7 @@
   export PATH=$PATH:$PWD/sratoolkit.3.0.7-mac64/bin
 
   prefetch SRR7650729
-  fastq-dump --gzip --outdir ./fastq/ --split-files ./sra/SRR7650729.sra
+  fastq-dump --gzip --outdir ./fastq/ --split-files ./sra\ Files/sra/SRR5799383.sra
   ```
 * Use `prefetch` and `fasterq-dump` to extract FASTQ-files: https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
 * Useful info: https://erilu.github.io/python-fastq-downloader/
